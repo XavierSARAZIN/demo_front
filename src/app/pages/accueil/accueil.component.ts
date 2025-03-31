@@ -12,6 +12,7 @@ import {
 import {environment} from '../../../environments/environment';
 import {RouterLink} from '@angular/router';
 
+
 @Component({
   selector: 'app-accueil',
   imports: [
@@ -30,10 +31,10 @@ import {RouterLink} from '@angular/router';
 })
 export class AccueilComponent {
   http = inject(HttpClient)
-  produits: any = []
+  produits: Produit[] = []
 
   ngOnInit() {
-    this.http.get(`${environment.apiUrl}/produits`)
+    this.http.get<Produit[]>(`${environment.apiUrl}/produits`)
       .subscribe(produits => this.produits = produits)
   }
 }

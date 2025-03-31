@@ -1,4 +1,4 @@
 export const environment = {
   produtcion: true,
-  apiUrl: 'https://api.tonsite.com',
+  apiUrl: 'http://localhost:8080',
 };
