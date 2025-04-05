@@ -1,4 +1,5 @@
 type Etiquette = {
   id: number,
-  nom: string
+  nom: string,
+  couleur: string
 }

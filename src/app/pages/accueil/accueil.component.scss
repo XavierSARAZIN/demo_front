@@ -1,16 +1,19 @@
-mat-card-subtitle {
-
-  .code {
-    font-style: italic;
+mat-card {
+  &.mauvais-etat {
+    background-color: crimson;
   }
-  .etiquette {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #224bf1;
-    margin-left:5px;
+  mat-card-subtitle {
+    .code {
+      font-style: italic;
+    }
+    .etiquette {
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #224bf1;
+      margin-left: 5px;
+    }
   }
-}
-
-.header-card{
-  padding:20px;
+  .header-card {
+    padding: 20px;
+  }
 }

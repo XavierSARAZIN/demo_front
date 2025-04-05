@@ -11,6 +11,7 @@ import {
 } from '@angular/material/card';
 import {environment} from '../../../environments/environment';
 import {RouterLink} from '@angular/router';
+import {NgStyle} from '@angular/common';
 
 
 @Component({
@@ -24,7 +25,8 @@ import {RouterLink} from '@angular/router';
     MatCardHeader,
     MatCard,
     MatCardImage,
-    RouterLink
+    RouterLink,
+    NgStyle
   ],
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.scss'

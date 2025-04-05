@@ -3,7 +3,7 @@ type Produit = {
   nom: string,
   code: string,
   description: string,
-  prix: number
+  prix: number,
   etat: Etat,
   etiquettes: Etiquette[]
 }
